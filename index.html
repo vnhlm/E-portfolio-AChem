@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Portfolio Cover</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    
+    <!-- Corrected CSS File Path -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Corrected JavaScript File Path -->
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,32 +17,29 @@
             <h1 class="fade-in">Analytical Chemistry E-Portfolio</h1>
             <p class="fade-in">Presented by:</p>
             <table class="team-table fade-in">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Student ID</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Vivian Hwong Lee Ming</td><td>22008388</td></tr>
-                    <tr><td>Adrish Elnes Shammir bin Badrissham</td><td>22009193</td></tr>
-                    <tr><td>Muhammad Danish Hamizan bin Mohd Zawawi</td><td>22008480</td></tr>
-                    <tr><td>Ahmad Bazli bin Nazari</td><td>21002728</td></tr>
-                    <tr><td>Muhammad Alif Basyar bin Rosli</td><td>21002761</td></tr>
-                </tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                </tr>
+                <tr><td>Vivian Hwong Lee Ming</td><td>22008388</td></tr>
+                <tr><td>Adrish Elnes Shammir bin Badrissham</td><td>22009193</td></tr>
+                <tr><td>Muhammad Danish Hamizan bin Mohd Zawawi</td><td>22008480</td></tr>
+                <tr><td>Ahmad Bazli bin Nazari</td><td>21002728</td></tr>
+                <tr><td>Muhammad Alif Basyar bin Rosli</td><td>21002761</td></tr>
             </table>
             <p class="fade-in">Course: CFB3032/CEB4032 Analytical Chemistry</p>
             <p class="fade-in">Topic: E-PORTFOLIO</p>
         </header>
 
+        <!-- Navigation Menu -->
         <nav>
             <ul>
-                <li><a href="lecture-slides.html">Lecture Slides</a></li>
-                <li><a href="mind-maps.html">Mind Maps & Reflections</a></li>
-                <li><a href="additional-info.html">Additional Info</a></li>
+                <li><button onclick="navigateTo('slides.html')">Lecture Slides</button></li>
+                <li><button onclick="navigateTo('mindmaps.html')">Mind Maps</button></li>
+                <li><button onclick="navigateTo('reflections.html')">Reflections</button></li>
+                <li><button onclick="navigateTo('additional.html')">Additional Info</button></li>
             </ul>
         </nav>
     </div>
 </body>
-<script src="assets/script.js"></script>
 </html>
